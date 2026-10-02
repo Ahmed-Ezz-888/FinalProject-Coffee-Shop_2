@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coffeeroasters — Create Your Plan</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./Combined Shape.svg" alt="" />
+          <h1>coffeeroasters</h1>
+        </div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./create-plan.html" class="active">Create Your Plan</a>
+        </nav>
+        <img src="./assets/menu.svg" id="menuIcon" alt="" />
+      </div>
+      <div class="mobileNav" id="mobileNav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./create-plan.html" class="active">Create Your Plan</a>
+      </div>
+    </header>
+
+    <section id="cpHeroWrap">
+      <div class="container">
+        <div class="pageHero" id="cpHero">
+          <div class="pageHeroText">
+            <h1>Create plan</h1>
+            <p>
+              Coffee the way you wanted it to be. For coffee delivered
+              tomorrow, or next week. For whatever brew method you use. For
+              choice, for convenience, for quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cpSteps">
+      <div class="container">
+        <div class="stepsBox">
+          <div class="stepsTrack">
+            <span class="dot"></span><span class="dot"></span
+            ><span class="dot"></span>
+          </div>
+          <div class="stepGrid">
+            <div class="step1">
+              <div class="stepNum">01</div>
+              <h3>Pick your coffee</h3>
+              <p>
+                Select from our evolving range of artisan coffees. Our beans
+                are ethically sourced and we pay fair prices for them.
+                There are new coffees in all profiles every month for you
+                to try out.
+              </p>
+            </div>
+            <div class="step2">
+              <div class="stepNum">02</div>
+              <h3>Choose the frequency</h3>
+              <p>
+                Customize your order frequency, quantity, even your roast
+                style and grind type. Pause, skip or cancel your
+                subscription with no commitment through our online portal.
+              </p>
+            </div>
+            <div class="step3">
+              <div class="stepNum">03</div>
+              <h3>Receive and enjoy!</h3>
+              <p>
+                We ship your package within 48 hours, freshly roasted. Sit
+                back and enjoy award-winning world-class coffees curated to
+                provide a distinct tasting experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cpBody">
+      <div class="container">
+        <ul class="sidebar">
+          <li class="active" id="sideStep1"><span class="idx">01</span> Preferences</li>
+          <li id="sideStep2"><span class="idx">02</span> Bean Type</li>
+          <li id="sideStep3"><span class="idx">03</span> Quantity</li>
+          <li id="sideStep4"><span class="idx">04</span> Grind Option</li>
+          <li id="sideStep5"><span class="idx">05</span> Deliveries</li>
+        </ul>
+
+        <div class="questions">
+          <!-- سؤال 1: طريقة تحضير القهوة -->
+          <div class="q open" id="question1">
+            <div class="qHead">
+              <h2>How do you drink your coffee?</h2>
+              <span class="chev">&#9650;</span>
+            </div>
+            <div class="qBody">
+              <div class="optGrid" id="brewGroup">
+                <div class="optCard" data-value="Capsule" data-label="Capsules">
+                  <h3>Capsule</h3>
+                  <p>Compatible with Nespresso systems and similar brewers</p>
+                </div>
+                <div class="optCard" data-value="Filter" data-label="Filter">
+                  <h3>Filter</h3>
+                  <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                </div>
+                <div class="optCard" data-value="Espresso" data-label="Espresso">
+                  <h3>Espresso</h3>
+                  <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 2: نوع البن -->
+          <div class="q open" id="question2">
+            <div class="qHead">
+              <h2>What type of coffee?</h2>
+              <span class="chev">&#9650;</span>
+            </div>
+            <div class="qBody">
+              <div class="optGrid" id="beanGroup">
+                <div class="optCard" data-value="Single Origin" data-label="Single Origin">
+                  <h3>Single Origin</h3>
+                  <p>Distinct, high quality coffee from a specific family-owned farm</p>
+                </div>
+                <div class="optCard" data-value="Decaf" data-label="Decaf">
+                  <h3>Decaf</h3>
+                  <p>Just like regular coffee, except the caffeine has been removed</p>
+                </div>
+                <div class="optCard" data-value="Blended" data-label="Blended">
+                  <h3>Blended</h3>
+                  <p>Combination of two or three dark roasted beans of organic coffees</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 3: الكمية -->
+          <div class="q open" id="question3">
+            <div class="qHead">
+              <h2>How much would you like?</h2>
+              <span class="chev">&#9650;</span>
+            </div>
+            <div class="qBody">
+              <div class="optGrid" id="qtyGroup">
+                <div class="optCard" data-value="250g" data-label="250g">
+                  <h3>250g</h3>
+                  <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                </div>
+                <div class="optCard" data-value="500g" data-label="500g">
+                  <h3>500g</h3>
+                  <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+                </div>
+                <div class="optCard" data-value="1000g" data-label="1000g">
+                  <h3>1000g</h3>
+                  <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 4: الطحن -->
+          <div class="q open" id="question4">
+            <div class="qHead">
+              <h2>Want us to grind them?</h2>
+              <span class="chev">&#9650;</span>
+            </div>
+            <div class="qBody">
+              <div class="optGrid" id="grindGroup">
+                <div class="optCard" data-value="Wholebean" data-label="Wholebean">
+                  <h3>Wholebean</h3>
+                  <p>Best choice if you cherish the full sensory experience</p>
+                </div>
+                <div class="optCard" data-value="Filter" data-label="Filter">
+                  <h3>Filter</h3>
+                  <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                </div>
+                <div class="optCard" data-value="Cafetiére" data-label="Cafetiére">
+                  <h3>Cafetiére</h3>
+                  <p>Course ground beans specially suited for french press coffee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 5: ميعاد التوصيل -->
+          <div class="q open" id="question5">
+            <div class="qHead">
+              <h2>How often should we deliver?</h2>
+              <span class="chev">&#9650;</span>
+            </div>
+            <div class="qBody">
+              <div class="optGrid" id="freqGroup">
+                <div class="optCard" data-value="Every Week" data-label="Every Week">
+                  <h3>Every week</h3>
+                  <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                </div>
+                <div class="optCard" data-value="Every 2 Weeks" data-label="Every 2 Weeks">
+                  <h3>Every 2 weeks</h3>
+                  <p>$9.60 per shipment. Includes free priority shipping.</p>
+                </div>
+                <div class="optCard" data-value="Every Month" data-label="Every Month">
+                  <h3>Every month</h3>
+                  <p>$12.00 per shipment. Includes free priority shipping.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="orderBox">
+            <span class="obLabel">Order Summary</span>
+            <p class="obQuote" id="orderQuote">
+              "I drink my coffee using
+              <span class="blank" id="qBrew">____</span>, with a
+              <span class="blank" id="qBean">____</span> type of bean.
+              <span class="blank" id="qQty">____</span><span id="qGrindWrap"></span>,
+              sent to me <span class="blank" id="qFreq">____</span>."
+            </p>
+          </div>
+
+          <div id="submitRow">
+            <button class="btnDisabled" id="submitBtn" disabled>
+              Create your plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footLogo">
+          <img src="./assets/logo-white.svg" alt="" />
+          <h1>coffeeroasters</h1>
+        </div>
+        <div class="footNav">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./create-plan.html">Create Your Plan</a>
+        </div>
+        <div class="footSocial">
+          <a href="#"><img src="./assets/social-facebook.svg" alt="" /></a>
+          <a href="#"><img src="./assets/social-twitter.svg" alt="" /></a>
+          <a href="#"><img src="./assets/social-instagram.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- المودال بتاع ملخص الطلب -->
+    <div id="modalOverlay">
+      <div class="modalBox">
+        <div class="modalHead">
+          <button id="modalClose">&times;</button>
+          <h2>Order Summary</h2>
+        </div>
+        <div class="modalBody">
+          <p id="modalQuote"></p>
+          <p class="modalNote">
+            Is this correct? You can proceed to checkout or go back to plan
+            selection if something is off. Subscription discount codes can
+            also be redeemed at the checkout.
+          </p>
+          <div class="modalFoot">
+            <span class="price">$14.00/ mo</span>
+            <button class="btnPrime">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
